@@ -1,0 +1,48 @@
+HOW TO SUBMIT PITAK TO F-DROID
+==============================
+
+Everything in this repo is ready. The recipe is `dev.khoj.pitaka.fdroid.yml`
+(in this folder). The remaining steps need a GitLab account and are done by a
+human (you), because they involve a merge request to F-Droid's repo.
+
+PRE-FLIGHT (already done / verified)
+- Public source repo: https://github.com/PLFIndia/pitak-fdroid-app
+- LICENSE present (GPL-3.0-or-later); GitHub detects it.
+- No proprietary deps (no ML Kit / Play Services); all deps GPL-compatible.
+- Release build succeeds from a fresh clone, unsigned (F-Droid signs it).
+- Release tag pushed: v1.0.0  (versionCode 1).
+- fastlane metadata + 6 screenshots under fastlane/metadata/android/en-US/.
+
+SUBMISSION STEPS
+1. Create / sign in to a GitLab account at https://gitlab.com .
+
+2. Fork F-Droid Data:  https://gitlab.com/fdroid/fdroiddata  ->  Fork.
+
+3. In your fork, add the recipe at this exact path (filename = applicationId):
+       metadata/dev.khoj.pitaka.fdroid.yml
+   Use the contents of `dev.khoj.pitaka.fdroid.yml` from this folder.
+
+4. (Recommended) Validate locally before opening the MR. With fdroidserver
+   installed:
+       fdroid lint dev.khoj.pitaka.fdroid
+       fdroid readmeta
+       fdroid build -v -l dev.khoj.pitaka.fdroid     # full test build (slow)
+   fdroidserver install: https://f-droid.org/docs/Installing_the_Server_and_Repo_Tools/
+
+5. Commit on a new branch in your fork, push, and open a Merge Request against
+   fdroiddata `master`. Title e.g. "New app: Pitak (dev.khoj.pitaka.fdroid)".
+
+6. F-Droid's CI runs a build on their servers. Respond to any reviewer notes
+   (licensing, anti-features, build tweaks). First submissions usually take a
+   few review rounds. Once merged, the app appears in the F-Droid client at the
+   next index publish.
+
+NOTES
+- F-Droid builds the `release` variant from the v1.0.0 tag, subdir `app`,
+  `gradle: [yes]` (no product flavors).
+- Future releases: bump versionCode (must increase) + versionName in
+  app/build.gradle.kts, add fastlane/metadata/.../changelogs/<versionCode>.txt,
+  commit, then push a new tag vX.Y.Z. UpdateCheckMode: Tags picks it up
+  automatically; AutoUpdateMode generates the next Build entry.
+- Native libs (SQLCipher, Argon2) ship as prebuilt .so inside their AARs; there
+  is no NDK/CMake compile step, so no special build flags are needed.

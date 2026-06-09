@@ -1,0 +1,25 @@
+Categories:
+  - Reading
+  - Office
+License: GPL-3.0-or-later
+AuthorName: Parallel Line Foundation
+SourceCode: https://github.com/PLFIndia/pitak-fdroid-app
+IssueTracker: https://github.com/PLFIndia/pitak-fdroid-app/issues
+
+AutoName: Pitak
+
+RepoType: git
+Repo: https://github.com/PLFIndia/pitak-fdroid-app.git
+
+Builds:
+  - versionName: 1.0.0
+    versionCode: 1
+    commit: v1.0.0
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: Tags
+CurrentVersion: 1.0.0
+CurrentVersionCode: 1
