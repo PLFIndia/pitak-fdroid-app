@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Saffron / sindoor base palette (D29). Hex values chosen from a 10-step tonal
+         palette seeded around the sindoor red #E25822. These are *fallback* colors
+         used by the XML boot theme; Compose Material 3 derives the live ColorScheme
+         from these seeds in ui/theme/Color.kt. -->
+
+    <color name="pitaka_saffron_900">#3A0F02</color>
+    <color name="pitaka_saffron_800">#5C1A04</color>
+    <color name="pitaka_saffron_700">#7E2706</color>
+    <color name="pitaka_saffron_600">#A03509</color>
+    <color name="pitaka_saffron_500">#C0431A</color>
+    <color name="pitaka_saffron_400">#E25822</color> <!-- seed -->
+    <color name="pitaka_saffron_300">#EC7B4D</color>
+    <color name="pitaka_saffron_200">#F4A079</color>
+    <color name="pitaka_saffron_100">#FAC7A7</color>
+    <color name="pitaka_saffron_50">#FFF1E6</color>
+
+    <color name="pitaka_ink_900">#1F1209</color>
+    <color name="pitaka_ink_50">#FFFAF5</color>
+</resources>

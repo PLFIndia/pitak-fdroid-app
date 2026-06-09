@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Placeholder launcher foreground: a simple book-spine glyph on a transparent
+     background. Adaptive icon's saffron background (D29) carries the brand.
+     The "प" / पिटक treatment from D20 will land when we produce a proper SVG. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- A stylized open-book mark sized into the 72dp safe zone of an adaptive icon -->
+    <path
+        android:pathData="M36,40 L36,72 L52,68 L52,36 Z"
+        android:fillColor="#FFFAF5" />
+    <path
+        android:pathData="M72,40 L72,72 L56,68 L56,36 Z"
+        android:fillColor="#FFFAF5" />
+    <!-- F-Droid variant: book spine is medium gray (#808080) instead of the
+         near-black #3A0F02 used by the Play build, so the two installs are
+         distinguishable at a glance in the launcher. -->
+    <path
+        android:pathData="M52,36 L52,68 L56,68 L56,36 Z"
+        android:fillColor="#808080" />
+</vector>

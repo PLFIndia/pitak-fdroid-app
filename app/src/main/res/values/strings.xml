@@ -1,0 +1,725 @@
+<resources>
+    <string name="app_name">Pitak</string>
+
+    <!-- Library -->
+    <string name="library_title">Library</string>
+    <string name="library_empty_headline">No books yet</string>
+    <string name="library_empty_card_scan">Scan a book</string>
+    <string name="library_empty_card_type">Type one in</string>
+    <string name="library_empty_card_import">Import an existing list</string>
+    <string name="library_empty_card_dismiss">Dismiss</string>
+    <string name="library_search_hint">Search title, author, ISBN</string>
+    <string name="library_pending_cd">Pending — overdue loans, reminders</string>
+    <string name="library_pending_locked_toast">Vault and Pending are coming in Phase 4.</string>
+    <string name="library_scan_cd">Scan a book</string>
+    <string name="library_publish_cd">Publish library</string>
+    <string name="library_add_cd">Add a book</string>
+
+    <!-- Add / Edit Book -->
+    <string name="add_book_title">Add book</string>
+    <string name="edit_book_title">Edit book</string>
+    <string name="edit_book_save_warning_isbn_changed">Changing the ISBN clears any cached metadata for the old one and lets you look up the new one. Continue?</string>
+    <string name="edit_book_save_warning_isbn_changed_confirm">Yes, change it</string>
+    <string name="add_book_title_label">Title</string>
+    <string name="add_book_title_required">Title is required</string>
+    <string name="add_book_transliteration_label">Title (Roman script, optional)</string>
+    <string name="add_book_author_label">Author</string>
+    <string name="add_book_isbn_label">ISBN</string>
+    <string name="add_book_publisher_label">Publisher</string>
+    <string name="add_book_year_label">Published year</string>
+    <string name="add_book_genre_label">Genre</string>
+    <string name="add_book_language_label">Language</string>
+    <string name="add_book_pages_label">Pages</string>
+    <string name="add_book_notes_label">Notes about the book</string>
+    <string name="add_book_date_added_label">Date added</string>
+    <string name="add_book_date_added_change">Change</string>
+    <string name="add_book_date_added_ok">OK</string>
+    <string name="add_book_notes_support">Things about the book itself — edition, condition, where you got it. For a note about who you\'ve lent it to, add it when you lend the book; those notes stay in your encrypted vault.</string>
+    <string name="add_book_location_label">Shelf / location</string>
+    <string name="add_book_quantity_label">Quantity</string>
+    <string name="add_book_source_type_label">Source</string>
+    <string name="add_book_source_detail_label">Source details</string>
+    <string name="add_book_age_group_label">Age group</string>
+    <string name="add_book_save">Save</string>
+    <string name="add_book_cancel">Cancel</string>
+
+    <!-- Book Detail -->
+    <string name="book_detail_lend">Lend</string>
+    <string name="book_detail_edit">Edit</string>
+    <string name="book_detail_note">Note</string>
+    <string name="book_detail_share">Share</string>
+    <string name="book_detail_delete">Remove</string>
+    <string name="book_detail_delete_confirm_title">Remove this book?</string>
+    <string name="book_detail_delete_confirm_message">It will be marked as removed from the library and won\'t appear on your published page. Nothing is erased — you can restore it any time, and loan history stays intact.</string>
+    <string name="book_detail_delete_confirm">Remove</string>
+    <string name="book_detail_restored">Restored to your library.</string>
+    <string name="book_detail_removed_badge">Removed</string>
+    <string name="library_book_not_available_badge">Not available</string>
+    <string name="book_detail_restore">Restore to library</string>
+    <string name="book_detail_share_template">%1$s by %2$s</string>
+    <string name="book_detail_share_template_with_isbn">%1$s by %2$s (ISBN %3$s)</string>
+    <string name="book_detail_share_template_no_author">%1$s</string>
+    <string name="book_detail_share_template_no_author_with_isbn">%1$s (ISBN %2$s)</string>
+    <string name="book_detail_share_chooser">Share book</string>
+    <string name="book_detail_lend_unavailable">Lending is coming in Phase 4.</string>
+    <string name="book_detail_note_unavailable">Per-book notes editor coming next.</string>
+
+    <!-- Scanner -->
+    <string name="scanner_title">Scan a book</string>
+    <string name="scanner_aim_hint">Aim at the back-cover barcode</string>
+    <string name="scanner_permission_rationale">Pitak needs your camera to scan ISBN barcodes. Granting it stays on this device — Pitak does not send camera frames anywhere.</string>
+    <string name="scanner_permission_grant">Grant camera access</string>
+    <string name="scanner_permission_open_settings">Open Settings</string>
+    <string name="scanner_permission_permanent_denied">Camera access was permanently denied. Open Settings to grant it manually.</string>
+    <string name="scanner_manual_entry">Enter ISBN manually instead</string>
+
+    <!-- ISBN lookup (Add Book) -->
+    <string name="add_book_isbn_lookup">Lookup</string>
+    <string name="add_book_isbn_lookup_progress">Looking up…</string>
+    <string name="add_book_isbn_lookup_not_found_title">No metadata found for that ISBN</string>
+    <string name="add_book_isbn_lookup_not_found_body">Pitak couldn\'t find this ISBN in Open Library or Google Books. You can search by title, save with just the ISBN, or fill the form yourself.</string>
+    <string name="add_book_isbn_lookup_search_title">Search by title</string>
+    <string name="add_book_isbn_lookup_save_skeleton">Save with just ISBN</string>
+    <string name="add_book_isbn_lookup_fill_manually">Fill manually</string>
+    <string name="add_book_isbn_lookup_network_title">Couldn\'t reach the lookup services</string>
+    <string name="add_book_isbn_lookup_network_body">You may be offline, or both providers are unreachable. You can save with just the ISBN now and refresh later, or fill the form yourself.</string>
+    <string name="add_book_isbn_lookup_retry">Retry</string>
+
+    <!-- Title search dialog -->
+    <string name="title_search_title">Search results</string>
+    <string name="title_search_empty">No matches.</string>
+    <string name="title_search_error">Couldn\'t reach the search providers.</string>
+    <string name="title_search_close">Close</string>
+
+    <!-- Library row -->
+    <string name="library_row_needs_metadata">needs metadata</string>
+
+    <!-- Wishlist -->
+    <string name="wishlist_title">Wishlist</string>
+    <string name="wishlist_empty_headline">No wishlist books yet</string>
+    <string name="wishlist_empty_body">Scan or type books you want to buy. Mark them purchased when you get them.</string>
+    <string name="wishlist_filter_active">Active</string>
+    <string name="wishlist_filter_purchased">Purchased</string>
+    <string name="wishlist_search_hint">Search wishlist</string>
+    <string name="wishlist_add_cd">Add to wishlist</string>
+    <string name="wishlist_scan_cd">Scan to wishlist</string>
+    <string name="wishlist_priority_low">Low</string>
+    <string name="wishlist_priority_med">Med</string>
+    <string name="wishlist_priority_high">High</string>
+    <string name="wishlist_mark_purchased">Mark purchased</string>
+    <string name="wishlist_move_to_library">Move to Library</string>
+    <string name="wishlist_purchased_only">Just mark purchased</string>
+    <string name="wishlist_purchased_dialog_title">Mark as purchased?</string>
+    <string name="wishlist_purchased_dialog_body">Would you like to add this to your Library at the same time?</string>
+    <string name="wishlist_already_in_library_title">Already in your Library</string>
+    <string name="wishlist_already_in_library_body">This book is already in your Library. The wishlist entry was marked purchased; tap to open the existing book.</string>
+    <string name="wishlist_already_in_library_open">Open existing</string>
+    <string name="wishlist_price_label">Estimated price</string>
+    <string name="wishlist_priority_label">Priority</string>
+    <string name="wishlist_purchased_chip">Purchased</string>
+
+    <!-- Export / Import -->
+    <string name="export_title">Export</string>
+    <string name="export_scope_library">Library only</string>
+    <string name="export_scope_wishlist">Wishlist only</string>
+    <string name="export_scope_both">Both</string>
+    <string name="export_format_json">JSON (re-importable)</string>
+    <string name="export_format_csv">CSV (spreadsheet)</string>
+    <string name="export_format_bundle">Bundle with covers (.zip)</string>
+    <string name="export_format_pdf">PDF (book list)</string>
+    <!-- PDF export: column headers and footer -->
+    <string name="pdf_col_title">Title</string>
+    <string name="pdf_col_author">Author</string>
+    <string name="pdf_col_year">Year</string>
+    <string name="pdf_col_isbn">ISBN</string>
+    <string name="pdf_col_publisher">Publisher</string>
+    <string name="pdf_col_genre">Genre</string>
+    <string name="pdf_col_language">Language</string>
+    <string name="pdf_col_pages">Pages</string>
+    <string name="pdf_col_age_group">Age group</string>
+    <string name="pdf_col_quantity">Qty</string>
+    <string name="pdf_col_added_date">Date added</string>
+    <string name="pdf_col_location">Location</string>
+    <string name="pdf_col_source">Source</string>
+    <string name="pdf_col_source_detail">Source detail</string>
+    <string name="pdf_footer_attribution">Book records are generated using Pitak, a free personal and community library software developed by Parallel Line Foundation</string>
+    <string name="export_pdf_columns_title">PDF columns</string>
+    <string name="export_pdf_columns_hint">Choose which fields appear as columns. Title is always included.</string>
+    <string name="export_save">Save…</string>
+    <string name="export_share">Share…</string>
+    <string name="export_share_chooser">Share export</string>
+    <string name="export_done">Saved.</string>
+
+    <string name="import_title">Import</string>
+    <string name="import_pick">Pick a file…</string>
+    <string name="import_supported">Pitak JSON, Pitak bundle (.zip, with covers), and Goodreads CSV are supported.</string>
+    <string name="import_summary_done">Done.</string>
+    <string name="import_summary_format">Format: %1$s</string>
+    <string name="import_summary_books">Library: %1$d added, %2$d skipped (already present).</string>
+    <string name="import_summary_wishlist">Wishlist: %1$d added, %2$d replaced.</string>
+    <string name="import_summary_errors">%1$d rows had errors.</string>
+    <string name="import_failure">Couldn\'t recognize that file.</string>
+    <string name="import_close">Close</string>
+
+    <!-- Vault / Loans / Borrowers / Pending (Phase 4) -->
+    <string name="vault_locked_headline">Vault locked</string>
+    <string name="vault_locked_body_new">Loans and borrowers are private. Tap Enable to set up your encrypted vault.</string>
+    <string name="vault_locked_body_existing">Unlock the vault to view loans, borrowers, and pending reminders.</string>
+    <string name="vault_unlock_button">Unlock vault</string>
+    <string name="vault_enable_button">Enable vault</string>
+    <string name="vault_prompt_title">Pitak vault</string>
+    <string name="vault_prompt_subtitle_enable">Confirm with your fingerprint or device screen lock to set up the vault</string>
+    <string name="vault_prompt_subtitle_unlock">Confirm with your fingerprint or device screen lock</string>
+    <string name="vault_unlock_method_note">Use your fingerprint or your device PIN/pattern</string>
+    <string name="vault_unlock_method_warning_not">NOT</string>
+    <string name="vault_unlock_method_warning_rest">your Pitak PIN</string>
+    <string name="vault_lock_action">Lock vault</string>
+
+    <string name="loans_title">Loans</string>
+    <string name="loans_tab_active">Active</string>
+    <string name="loans_tab_history">History</string>
+    <string name="loans_tab_borrowers">Borrowers</string>
+    <string name="loans_empty_headline">No active loans</string>
+    <string name="loans_empty_body">When you lend a book, it shows up here. Open a book from the Library and tap Lend.</string>
+    <string name="loans_history_empty">Nothing in history yet.</string>
+    <string name="loan_lent_date">Lent: %1$s</string>
+    <string name="loan_due_date">Due: %1$s</string>
+    <string name="loan_returned_date">Returned: %1$s</string>
+    <string name="loan_overdue">Overdue</string>
+    <string name="loan_due_in_days">Due in %1$d day(s)</string>
+    <string name="loan_mark_returned">Mark returned</string>
+
+    <string name="borrowers_empty">No borrowers yet. They\'re created automatically the first time you lend a book to someone new.</string>
+    <string name="borrower_total_loans">Total loans: %1$d</string>
+    <string name="borrower_avg_return">Average return: %1$.1f days</string>
+    <string name="borrower_overdue_rate">Overdue rate: %1$d%%</string>
+    <string name="borrower_no_returns_yet">No returns yet</string>
+    <string name="borrower_section_active">Currently borrowed</string>
+    <string name="borrower_section_history">Returned history</string>
+
+    <string name="lend_title">Lend book</string>
+    <string name="lend_book_label">Book</string>
+    <string name="lend_borrower_existing">Pick an existing borrower</string>
+    <string name="lend_borrower_new">Or create a new borrower (just type their name)</string>
+    <string name="lend_borrower_name">Borrower name</string>
+    <string name="lend_borrower_contact">Contact (optional)</string>
+    <string name="lend_due_date_label">Due date (optional)</string>
+    <string name="lend_notes_label">Notes (optional)</string>
+    <string name="lend_notes_support">Kept in your encrypted vault with the borrower\'s details.</string>
+    <string name="lend_save">Lend</string>
+    <string name="lend_no_borrower">Pick a borrower or type a new name.</string>
+
+    <string name="pending_title">Pending</string>
+    <string name="pending_section_overdue">Overdue</string>
+    <string name="pending_section_due_soon">Due soon</string>
+    <string name="pending_section_stale">Books missing metadata</string>
+    <string name="pending_backup_banner_title">Set a backup passphrase</string>
+    <string name="pending_backup_banner_body">Without a backup passphrase, you can\'t restore your vault on a new phone.</string>
+    <string name="pending_backup_banner_action">Set passphrase</string>
+    <string name="pending_backup_banner_dismiss">I understand the risk</string>
+    <string name="pending_empty">Nothing pending.</string>
+
+    <string name="backup_passphrase_title">Backup passphrase</string>
+    <string name="backup_passphrase_body">Used only to encrypt portable backup files. Required to restore on a new phone. Pitak can\'t recover this for you.</string>
+    <string name="backup_passphrase_field">Passphrase</string>
+    <string name="backup_passphrase_hint_field">Optional hint (anyone with this phone can read this)</string>
+    <string name="backup_passphrase_save">Save passphrase</string>
+    <string name="backup_passphrase_too_short">Use at least 8 characters.</string>
+    <string name="backup_passphrase_saved">Backup passphrase saved.</string>
+
+    <string name="wipe_vault_title">Wipe vault</string>
+    <string name="wipe_vault_body">This deletes all borrowers, loans, and the backup passphrase. Your Library and Wishlist on this device are kept. There is no undo.</string>
+    <string name="wipe_vault_confirm">Wipe vault</string>
+
+    <!-- Publish (Phase 5) -->
+    <string name="publish_title">Publish library</string>
+    <string name="publish_intro">Publish a public, browsable copy of your Library to GitHub Pages. Your wishlist, loans, and notes stay on this device.</string>
+    <string name="publish_auth_status_signed_in">Signed in as %1$s</string>
+    <string name="publish_auth_status_signed_out">Not signed in to GitHub</string>
+    <string name="publish_target_repo">Target: %1$s</string>
+    <string name="publish_target_repo_none">No target repo selected</string>
+    <string name="publish_sign_in">Sign in / Change account</string>
+    <string name="publish_pick_repo">Choose target repo</string>
+    <string name="publish_now">Publish now</string>
+    <string name="publish_progress">Uploading…</string>
+    <string name="publish_open_in_browser">Open published library</string>
+    <string name="publish_pages_hint">After your first publish, enable Pages in your repo Settings → Pages → Deploy from a branch → main / root.</string>
+    <string name="publish_cf_wizard_link">Cloudflare Pages instead?</string>
+    <string name="publish_sign_out">Sign out</string>
+    <string name="publish_contact_title">Contact info</string>
+    <string name="publish_contact_caution">Optional. Anything you enter here is shown publicly on your published page. Leave a field blank to omit it.</string>
+    <string name="publish_contact_location_label">Location / GPS</string>
+    <string name="publish_contact_location_hint">Coordinates (e.g. 12.9716, 77.5946) or an address</string>
+    <string name="publish_contact_email_label">Email</string>
+    <string name="publish_contact_email_hint">e.g. library@example.com</string>
+    <string name="publish_contact_phone_label">Phone</string>
+    <string name="publish_contact_phone_hint">e.g. +91 98765 43210</string>
+
+    <string name="gh_auth_title">Sign in to GitHub</string>
+    <string name="gh_auth_intro">Pitak uses your own GitHub OAuth App for sign-in (§1.1 — no developer infrastructure). Register one at github.com/settings/applications/new with the Device Flow option checked and paste the Client ID below.</string>
+    <string name="gh_auth_client_id">OAuth App Client ID</string>
+    <string name="gh_auth_client_id_error">That doesn\'t look like a Client ID. Paste just the Client ID from your OAuth App\'s settings page — not the full URL.</string>
+    <string name="gh_auth_use_oauth">Start sign-in (Device Flow)</string>
+    <string name="gh_auth_use_pat">…or paste a fine-grained PAT instead</string>
+    <string name="gh_auth_pat">Personal access token</string>
+    <string name="gh_auth_save_pat">Save token</string>
+    <string name="gh_auth_user_code_label">Enter this code at:</string>
+    <string name="gh_auth_user_code_open">Open verification page</string>
+    <string name="gh_auth_polling">Waiting for you to authorize on github.com…</string>
+    <string name="gh_auth_denied">Authorization denied.</string>
+    <string name="gh_auth_expired">Code expired. Try again.</string>
+    <string name="gh_auth_failed">Sign-in failed: %1$s</string>
+
+    <string name="cf_wizard_title">Cloudflare Pages</string>
+    <string name="cf_wizard_intro">Pitak does not talk to Cloudflare directly. To serve your library from Cloudflare Pages in addition to GitHub Pages, do this once on your own Cloudflare account:</string>
+    <string name="cf_wizard_step1">1. Sign in to dash.cloudflare.com.</string>
+    <string name="cf_wizard_step2">2. Workers &amp; Pages → Create application → Pages → Connect to Git.</string>
+    <string name="cf_wizard_step3">3. Pick the same GitHub repo you publish to from Pitak. Build settings: none. Output directory: /.</string>
+    <string name="cf_wizard_step4">4. Save and deploy. Every time you publish from Pitak, Cloudflare redeploys automatically.</string>
+
+    <!-- Backup / Restore (Phase 6) -->
+    <string name="backup_title">Backup &amp; restore</string>
+    <string name="backup_intro">Bundle your books, wishlist, vault, and the passphrase blob into a single encrypted archive you can save anywhere — Drive, Dropbox, an SD card, your laptop.</string>
+    <string name="backup_now">Backup now</string>
+    <string name="backup_last_never">No backup yet on this device.</string>
+    <string name="backup_last_today">Last backup: today.</string>
+    <string name="backup_last_n_days_ago">Last backup: %1$d day(s) ago.</string>
+    <string name="backup_stale_warning">Your last backup is older than %1$d days. If you lose this phone you lose your vault.</string>
+    <string name="backup_saved">Backup saved.</string>
+    <string name="backup_default_filename">Pitak-backup-%1$s.pitabak</string>
+
+    <string name="restore_title">Restore from archive</string>
+    <string name="restore_pick">Pick a .pitabak file…</string>
+    <string name="restore_passphrase_title">Backup passphrase</string>
+    <string name="restore_passphrase_hint_label">Hint stored in archive:</string>
+    <string name="restore_passphrase_field">Enter your backup passphrase</string>
+    <string name="restore_passphrase_continue">Restore</string>
+    <string name="restore_wrong_passphrase">Passphrase didn\'t match. Try again.</string>
+    <string name="restore_warning">This replaces all books, wishlist, and vault data on this device. There is no undo.</string>
+    <string name="restore_succeeded_title">Restore complete</string>
+    <string name="restore_succeeded_body">Pitak will close so the new data takes effect. Re-open the app from your launcher.</string>
+    <string name="restore_succeeded_button">Close Pitak</string>
+
+    <!-- Settings (Phase 7) -->
+    <string name="settings_section_appearance">Appearance</string>
+    <string name="settings_section_vault">Vault &amp; security</string>
+    <string name="settings_section_publishing">Publishing</string>
+    <string name="settings_section_backup">Backup</string>
+    <string name="settings_section_data">Data</string>
+    <string name="settings_section_about">About</string>
+
+    <!-- Settings tabs -->
+    <string name="settings_tab_appearance">Appearance</string>
+    <string name="settings_tab_security">Security</string>
+    <string name="settings_tab_data">Data</string>
+    <string name="settings_tab_translate">Contribute</string>
+
+    <!-- Data tab explainer -->
+    <string name="settings_data_explainer_title">What\'s stored, and what\'s private</string>
+    <string name="settings_data_explainer_books">Your books and wishlist are stored unencrypted on this device. They\'re the data you can export, publish, and share.</string>
+    <string name="settings_data_explainer_vault">Borrowers and loan records live in an encrypted vault, unlocked with your biometric. They\'re never published and never leave the device except inside an encrypted backup.</string>
+    <string name="settings_data_import_help">Bring in books from a Pitak export (.json), a Pitak bundle (.zip, with covers), or a Goodreads CSV.</string>
+    <string name="settings_data_export_help">Save your books and wishlist as JSON, CSV, a bundle with cover images, or PDF.</string>
+    <!-- Data tab: "Transfer & backup" card section labels (Option A grouping) -->
+    <string name="settings_data_card_booklist_label">Your book list</string>
+    <string name="settings_data_card_booklist_caption">Your Library and Wishlist. Plain and shareable — no borrower or loan data.</string>
+    <string name="settings_data_card_import_label">Import a list</string>
+    <string name="settings_data_card_export_label">Export a copy</string>
+    <string name="settings_data_card_backup_label">Full backup</string>
+    <string name="settings_data_card_backup_caption">An encrypted archive of everything — books, wishlist, and your locked vault. Needed to move to a new phone.</string>
+    <!-- Community library: merge, library ID, maintainer attribution (D40/D41) -->
+    <string name="settings_community_title">Community library</string>
+    <string name="settings_community_help">Share a book list with other maintainers. Each library has an ID — only files from the same library merge automatically.</string>
+    <string name="settings_maintainer_name_label">Your maintainer name</string>
+    <string name="settings_maintainer_name_help">Stamped on books you add, so others can see who catalogued what. Optional.</string>
+    <string name="settings_library_id_label">Library ID</string>
+    <string name="settings_library_id_show_qr">Show QR</string>
+    <string name="settings_library_id_copy">Copy</string>
+    <string name="settings_library_id_copied">Library ID copied</string>
+    <string name="settings_library_id_regenerate">Start a new library ID</string>
+    <string name="settings_scan_library_qr">Scan a library QR</string>
+    <string name="settings_scan_library_qr_help">Point your camera at another maintainer\'s library QR to pair with their library.</string>
+    <string name="merge_scan_qr_title">Scan library QR</string>
+    <string name="merge_scan_qr_hint">Point at another Pitak app\'s library QR</string>
+    <string name="merge_scan_qr_adopted">Paired — your app now shares their library ID. Files from that library will merge automatically.</string>
+    <string name="merge_scan_qr_permission_rationale">Pitak needs your camera to scan another maintainer\'s library QR and pair with their library. Granting it stays on this device — Pitak does not send camera frames anywhere.</string>
+    <string name="settings_library_id_qr_title">Your library QR</string>
+    <string name="settings_library_id_qr_body">Have another maintainer scan this to pair their app with your library.</string>
+    <string name="settings_library_id_regen_title">Start a new library ID?</string>
+    <string name="settings_library_id_regen_body">This detaches your app from the current library. Your books stay, but files you export will no longer merge automatically with maintainers who still use the old ID. You can re-pair by scanning their QR.</string>
+    <!-- Type-to-confirm guard so a stray tap can't detach the library. The phrase
+         is a deliberate acknowledgement, not a name; the new ID is still random. -->
+    <string name="settings_library_id_regen_confirm_phrase">new library</string>
+    <string name="settings_library_id_regen_confirm_label">Type \"new library\" to confirm</string>
+    <string name="settings_merge_from_file">Merge from a file</string>
+    <string name="settings_merge_help">Pick a library file another maintainer shared with you. New books are added; anything that differs is shown for you to decide.</string>
+    <!-- Merge result + differ-IDs (Join / Overwrite) -->
+    <string name="merge_result_title">Merge complete</string>
+    <string name="merge_result_summary">%1$d added · %2$d already matched · %3$d to review</string>
+    <string name="merge_differ_title">Different library</string>
+    <string name="merge_differ_body">This file is from “%1$s”, a different library than yours (“%2$s”). How do you want to bring it in?</string>
+    <string name="merge_differ_body_unknown">This file doesn\'t carry a library ID, so it may be from a different library than yours. How do you want to bring it in?</string>
+    <string name="merge_action_join">Join — keep both, combine the lists</string>
+    <string name="merge_action_overwrite">Replace my library entirely</string>
+    <string name="merge_overwrite_confirm_title">Replace your library?</string>
+    <string name="merge_overwrite_confirm_body">This removes all your current books and replaces them with the ones in this file. This can\'t be undone. Use Join instead if you want to keep your books.</string>
+    <string name="merge_cancel">Cancel</string>
+    <string name="settings_data_backup_help">Create or restore an encrypted backup archive (includes the vault, protected by your backup passphrase).</string>
+
+    <!-- Security tab -->
+    <string name="settings_security_vault_title">Backup passphrase</string>
+    <string name="settings_security_vault_help">Protects your encrypted backup archives so they can be restored on another device. Forgetting it only affects old backups, not the data on this phone.</string>
+
+    <!-- App Lock -->
+    <string name="applock_title">App lock</string>
+    <string name="applock_help">Require a PIN (and optionally your biometric) every time the app opens or returns after being away. This gates the whole app; it\'s separate from the vault that protects borrower data.</string>
+    <string name="applock_enable">Enable app lock</string>
+    <string name="applock_disable">Disable app lock</string>
+    <string name="applock_biometric_toggle">Unlock with biometric</string>
+    <string name="applock_biometric_help">Use your fingerprint or face to unlock, with your PIN as a fallback.</string>
+    <string name="applock_change_pin">Change PIN</string>
+    <string name="applock_set_pin_title">Set a PIN</string>
+    <string name="applock_enter_pin_title">Enter your Pitak PIN</string>
+    <string name="applock_confirm_pin_title">Confirm PIN</string>
+    <string name="applock_current_pin_title">Enter current PIN</string>
+    <string name="applock_pin_mismatch">PINs don\'t match. Try again.</string>
+    <string name="applock_pin_too_short">PIN must be at least 4 digits.</string>
+    <string name="applock_wrong_pin">Wrong PIN.</string>
+    <string name="applock_locked_title">App locked</string>
+    <string name="applock_use_pin">Use PIN</string>
+    <string name="applock_use_biometric">Use biometric</string>
+    <string name="applock_unlock_biometric_subtitle">Unlock Pitak</string>
+    <string name="applock_forgot_pin">Forgot PIN?</string>
+    <string name="applock_forgot_pin_reset">Reset with device unlock</string>
+    <string name="applock_forgot_pin_explain">Confirm your phone\'s screen lock to turn off app lock. Your library and vault data are not affected.</string>
+    <string name="applock_throttle_wait">Too many attempts. Try again in %1$d s.</string>
+    <string name="applock_autolock_label">Re-lock app after</string>
+    <string name="applock_timeout_immediate">Immediately</string>
+    <string name="applock_timeout_30s">30s</string>
+    <string name="applock_cancel">Cancel</string>
+    <string name="applock_continue">Continue</string>
+
+    <string name="settings_library_name">Library name</string>
+    <string name="settings_library_name_help">Shown on the home tab and as the heading of your published page. Leave blank to use the default \"Library\".</string>
+    <string name="settings_library_name_placeholder">e.g. Ravi\'s books</string>
+    <string name="settings_library_name_save">Save</string>
+    <string name="settings_library_name_saved">Saved.</string>
+    <string name="settings_library_name_local">Library name (local language)</string>
+    <string name="settings_library_name_local_help">Optional. Your library name in your own language/script — shown as a second line on the welcome screen. Leave blank to show only the English name.</string>
+    <string name="settings_library_name_local_placeholder">e.g. रवि की किताबें</string>
+
+    <string name="settings_theme_mode">Theme</string>
+    <string name="settings_theme_system">System</string>
+    <string name="settings_theme_light">Light</string>
+    <string name="settings_theme_dark">Dark</string>
+    <string name="settings_dynamic_color">Use device dynamic color</string>
+    <string name="settings_dynamic_color_help">Android 12+ only. Replaces the saffron palette with one derived from your wallpaper.</string>
+
+    <string name="settings_auto_lock">Vault auto-lock</string>
+    <string name="settings_auto_lock_15s">15s</string>
+    <string name="settings_auto_lock_60s">60s</string>
+    <string name="settings_auto_lock_5m">5m</string>
+    <string name="settings_auto_lock_15m">15m</string>
+    <string name="settings_auto_lock_1h">1h</string>
+    <string name="settings_set_backup_passphrase">Set or change backup passphrase</string>
+
+    <string name="settings_about_version">Version %1$s</string>
+    <string name="settings_about_blurb">पिटक — your personal library, on your device.</string>
+    <!-- Short in-app disclaimer (Settings → About). Full text ships as DISCLAIMER.md. -->
+    <string name="settings_about_disclaimer">Free to use, provided “as is” with no warranty. You are responsible for your own data, backups, and anything you publish. We collect nothing and are not liable for any loss. Use at your own risk.</string>
+
+    <!-- Pending screen extras -->
+    <string name="pending_backup_stale_title">Backup is stale</string>
+    <string name="pending_backup_stale_body">Your last backup was more than %1$d days ago. Open Backup to refresh it.</string>
+    <string name="pending_backup_stale_action">Open Backup</string>
+
+    <!-- Bottom nav -->
+    <string name="nav_library">Library</string>
+    <string name="nav_wishlist">Wishlist</string>
+    <string name="nav_loans">Loans</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Placeholders for not-yet-implemented screens -->
+    <string name="placeholder_wishlist">Wishlist arrives in Phase 3.</string>
+    <string name="placeholder_loans">Loans (vault-gated) arrives in Phase 4.</string>
+    <string name="placeholder_settings">Settings expands across all phases; full screen in Phase 7.</string>
+
+    <!-- Errors -->
+    <string name="error_generic">Something went wrong.</string>
+    <string name="error_retry">Retry</string>
+
+    <!-- ===================================================================
+         Strings extracted in Phase 0 localization prep.
+         Shared / "common_*" keys: a single source for OK / Cancel / Close /
+         Open / Back / Clear / Yes that's reused across screens. New screen-
+         specific keys follow the same <screen>_<role>_<intent> convention as
+         the rest of this file. Plural-suspect strings keep the existing
+         "(s)" pattern — Hindi/Punjabi tolerate the same shape.
+         =================================================================== -->
+
+    <!-- Common reusable -->
+    <string name="common_ok">OK</string>
+    <string name="common_close">Close</string>
+    <string name="common_open">Open</string>
+    <string name="common_open_existing">Open existing</string>
+    <string name="common_back">Back</string>
+    <string name="common_clear">Clear</string>
+    <string name="common_save">Save</string>
+    <string name="common_cancel">Cancel</string>
+    <string name="common_edit_cd">Edit %1$s</string>
+    <string name="common_yes">Yes</string>
+    <string name="detail_section_notes">Notes</string>
+
+    <!-- Bookmarks: links to other people's published library pages. -->
+    <string name="bookmarks_title">Bookmarks</string>
+    <string name="bookmarks_open_cd">Bookmarks — other libraries</string>
+    <string name="bookmarks_add_cd">Add bookmark</string>
+    <string name="bookmarks_empty">No bookmarks yet. Add a link to someone else\'s published library to open it here.</string>
+    <string name="bookmarks_add_title">Add bookmark</string>
+    <string name="bookmarks_add_save">Add</string>
+    <string name="bookmarks_field_name">Name</string>
+    <string name="bookmarks_field_url">Library link</string>
+    <string name="bookmarks_invalid">Enter a name and a valid https:// link.</string>
+    <string name="bookmarks_rename">Edit name</string>
+    <string name="bookmarks_delete">Delete</string>
+    <string name="bookmarks_row_menu_cd">More options</string>
+    <string name="bookmarks_delete_title">Delete bookmark?</string>
+    <string name="bookmarks_delete_message">Remove “%1$s” from your bookmarks?</string>
+    <string name="bookmarks_delete_confirm">Delete</string>
+    <string name="bookmarks_open_failed">Couldn\'t open this link.</string>
+
+
+    <!-- Book Detail (extracted) -->
+    <string name="book_detail_delete_requires_unlock">Unlock the vault to delete a book with loan history.</string>
+    <string name="book_detail_not_found">Book not found.</string>
+    <string name="book_detail_back_to_library">Back to library</string>
+    <string name="book_detail_cover_dialog_title">Cover photo</string>
+    <string name="book_detail_cover_scan">Take photo</string>
+    <string name="book_detail_cover_pick">Pick from gallery</string>
+    <string name="book_detail_cover_clear">Clear cover</string>
+    <string name="book_detail_camera_denied">Camera permission is needed to take a cover photo. You can still pick one from the gallery.</string>
+    <string name="book_detail_crop_failed">Couldn\'t crop the image: %1$s</string>
+    <string name="book_detail_crop_done">Done</string>
+    <string name="book_detail_scanner_unavailable">Scanner unavailable: %1$s</string>
+    <string name="book_detail_row_isbn">ISBN</string>
+    <string name="book_detail_row_publisher">Publisher</string>
+    <string name="book_detail_row_published">Published</string>
+    <string name="book_detail_row_genre">Genre</string>
+    <string name="book_detail_row_language">Language</string>
+    <string name="book_detail_row_pages">Pages</string>
+    <string name="book_detail_row_shelf">Shelf</string>
+    <string name="book_detail_row_copies">Copies</string>
+    <string name="book_detail_row_quantity">Quantity</string>
+    <string name="book_detail_row_available">Available</string>
+    <!-- %1$d = available, %2$d = quantity, %3$d = on loan -->
+    <string name="book_detail_available_value">%1$d of %2$d (%3$d on loan)</string>
+    <string name="book_detail_row_source">Source</string>
+    <string name="book_detail_row_source_detail">Source details</string>
+    <string name="book_detail_row_age_group">Age group</string>
+    <string name="book_detail_row_date_added">Date added</string>
+    <string name="book_detail_row_added_by">Added by</string>
+    <!-- Source-type provenance categories -->
+    <string name="source_type_unset">Not set</string>
+    <string name="source_type_purchased">Purchased</string>
+    <string name="source_type_gift">Gift</string>
+    <string name="source_type_donated">Donated</string>
+    <string name="source_type_inherited">Inherited</string>
+    <string name="source_type_other">Other</string>
+    <!-- Age group bands (order = sort order) -->
+    <string name="age_group_unset">Not set</string>
+    <string name="age_group_above_3">Above 3</string>
+    <string name="age_group_above_6">Above 6</string>
+    <string name="age_group_above_10">Above 10</string>
+    <string name="age_group_above_15">Above 15</string>
+    <string name="age_group_advanced">Advanced</string>
+
+    <!-- Library sort + filter controls (feature 3) -->
+    <string name="library_sort_prefix">Sort: %1$s</string>
+    <string name="library_sort_recent">Recently added</string>
+    <string name="library_sort_language">Language</string>
+    <string name="library_sort_age_group">Age group</string>
+    <string name="library_filter_clear">Clear</string>
+
+    <!-- Library (extracted) -->
+    <string name="library_no_matches">No matches for \"%1$s\".</string>
+    <string name="library_add_as_new">Add \"%1$s\" as a new book</string>
+
+    <!-- Lend (extracted) -->
+    <string name="lend_vault_locked_toast">Vault locked</string>
+    <string name="lend_due_value">Due: %1$s</string>
+    <string name="lend_quick_7_days">In 7 days</string>
+    <string name="lend_quick_30_days">In 30 days</string>
+    <string name="lend_clear_due_date">Clear</string>
+    <string name="lend_error_book_missing">Book missing</string>
+
+    <!-- Export (extracted) -->
+    <string name="export_save_failed">Save failed.</string>
+    <string name="export_share_failed">Couldn\'t prepare the export to share.</string>
+    <string name="export_scope_title">Scope</string>
+    <string name="export_format_title">Format</string>
+
+    <!-- Add Book (extracted) -->
+    <string name="add_book_duplicate_title">You already own this</string>
+    <string name="add_book_duplicate_body">A book with this ISBN already exists in your library. What would you like to do?</string>
+    <string name="add_book_duplicate_add_copy">Add duplicate copy</string>
+    <string name="add_book_isbn_changed_dialog_title">ISBN changed</string>
+    <string name="add_book_search_result_isbn_prefix">ISBN </string>
+
+    <!-- Add Wishlist (extracted) -->
+    <string name="add_wishlist_lookup_not_found">No metadata found for that ISBN.</string>
+    <string name="add_wishlist_lookup_network_error">Couldn\'t reach the lookup services.</string>
+    <string name="add_wishlist_edit_title">Edit wishlist book</string>
+    <string name="add_wishlist_duplicate_title">Already in your wishlist</string>
+    <string name="add_wishlist_duplicate_body">This ISBN is already on your wishlist. You can open the existing entry instead.</string>
+
+    <!-- Wishlist Detail (extracted) -->
+    <string name="wishlist_detail_not_found">Wishlist book not found.</string>
+    <string name="wishlist_detail_delete_confirm_title">Delete this wishlist entry?</string>
+    <string name="wishlist_detail_row_priority">Priority</string>
+    <string name="wishlist_detail_row_price">Price</string>
+    <string name="wishlist_detail_row_purchased">Purchased</string>
+
+    <!-- Settings (extracted) -->
+    <string name="settings_logo_label">Library logo</string>
+    <string name="settings_logo_help">Square image, cropped to 256×256.</string>
+    <string name="settings_logo_pick">Pick</string>
+
+    <!-- Welcome (extracted) -->
+    <string name="welcome_enter">Enter</string>
+    <string name="welcome_default_library_name">My Library</string>
+
+    <!-- Publish (extracted) -->
+    <string name="publish_repo_unnamed">(unnamed)</string>
+    <string name="publish_result_success">Published. %1$d files updated.</string>
+    <string name="publish_pages_live">Your page is live ✓</string>
+    <string name="publish_pages_building">GitHub is building your page — it may take a minute to refresh.</string>
+    <string name="publish_pages_build_failed">GitHub Pages reported a build error. Check the repo\'s Pages settings.</string>
+    <!-- Coarse publish phase labels (progress) -->
+    <string name="publish_phase_preparing">Preparing…</string>
+    <string name="publish_phase_uploading">Uploading changes…</string>
+    <string name="publish_phase_committing">Committing…</string>
+    <string name="publish_phase_pages_building">Building page on GitHub…</string>
+    <string name="publish_availability_omitted_hint">Availability wasn\'t included because the vault was locked. Unlock the vault before publishing to show Available / All-out status on your page.</string>
+
+    <!-- GitHub Auth (extracted) -->
+    <string name="gh_auth_signed_in">Signed in ✓</string>
+
+    <!-- Borrower (extracted) -->
+    <string name="borrower_profile_not_found">Borrower not found.</string>
+
+    <!-- Pending (extracted) -->
+    <string name="pending_loan_id_label">Loan #%1$d</string>
+    <string name="pending_loan_lent">Lent %1$s</string>
+    <string name="pending_loan_due">Due %1$s</string>
+    <string name="pending_isbn_value">ISBN %1$s</string>
+
+    <!-- Backup passphrase (extracted) -->
+    <string name="backup_passphrase_requires_unlock">Vault must be unlocked first.</string>
+
+    <!-- Backup (extracted) -->
+    <string name="backup_error_cant_open_destination">Couldn\'t open destination.</string>
+    <string name="backup_error_no_blob">Archive has no backup blob.</string>
+    <string name="backup_error_schema_too_new">Archive is from a newer Pitak (v%1$d).</string>
+
+    <!-- Vault (extracted) -->
+    <string name="vault_error_not_initialized">Vault not initialized</string>
+    <string name="vault_biometric_auth_error">Auth error (%1$d): %2$s</string>
+
+    <!-- Import (extracted) -->
+    <string name="import_read_failed">Couldn\'t read file.</string>
+
+    <!-- ===================================================================
+         Phase 1 localization — Contributor mode UI.
+         Strings shown only when a user has opted in to "Help translate
+         Pitak". Regular users never see these.
+         =================================================================== -->
+
+    <!-- Settings section -->
+    <string name="settings_section_translate">Help translate Pitak</string>
+    <string name="settings_translate_toggle_label">Localization Contributor mode</string>
+    <string name="settings_translate_toggle_help">When on, long-press any UI text in Pitak to suggest a better translation. Suggestions go to a public GitHub repo. Turn off any time.</string>
+    <string name="settings_translate_hints_label">Show translatable text</string>
+    <string name="settings_translate_hints_help">Draw a box around every UI text you can long-press to suggest a translation. Stays on until you turn it off.</string>
+    <string name="settings_translate_hints_demo">Translatable Text</string>
+    <string name="settings_translate_hints_example_label">Example</string>
+
+    <!-- Translate tab: onboarding guide shown only when Contributor mode is OFF. -->
+    <string name="settings_translate_guide_title">Help translate Pitak</string>
+    <string name="settings_translate_guide_intro">Pitak is translated by its community. If you can read another language, you can suggest better wording — right from the app.</string>
+    <string name="settings_translate_guide_step1">Create a free GitHub account (this is where suggestions are collected).</string>
+    <string name="settings_translate_guide_step2">Turn on Contributor mode using the switch above.</string>
+    <string name="settings_translate_guide_step3">Long-press any text in the app you\'d like to translate.</string>
+    <string name="settings_translate_guide_step4">Type your suggestion and submit — it opens a pre-filled form for you.</string>
+    <string name="settings_translate_guide_signup">Create a GitHub account</string>
+    <string name="settings_translate_guide_no_browser">No browser found to open the link.</string>
+
+
+    <!-- Suggestion sheet -->
+    <string name="suggest_sheet_title">Suggest a translation</string>
+    <string name="suggest_sheet_english_label">English source</string>
+    <string name="suggest_sheet_language_label">Language</string>
+    <string name="suggest_sheet_lang_hindi">Hindi (हिन्दी)</string>
+    <string name="suggest_sheet_lang_punjabi">Punjabi (ਪੰਜਾਬੀ)</string>
+    <string name="suggest_sheet_translation_label">Your suggestion</string>
+    <string name="suggest_sheet_translation_placeholder">Type the translated text…</string>
+    <string name="suggest_sheet_context_label">Context note (optional)</string>
+    <string name="suggest_sheet_context_placeholder">Anything the reviewer should know?</string>
+    <string name="suggest_sheet_submit">Submit on GitHub</string>
+    <string name="suggest_sheet_cancel">Cancel</string>
+    <string name="suggest_sheet_missing_translation">Add a translation first.</string>
+    <string name="suggest_sheet_no_browser">No app available to open GitHub.</string>
+
+    <!-- GitHub coordinates for the pitaka-translations repo.
+         Phase 1 Q6 (plfindia): personal account. Migration to a dedicated
+         GitHub Org can happen later via Settings → Transfer ownership;
+         contributor URLs in older app installs will redirect automatically. -->
+    <string name="contribute_repo_owner" translatable="false">PLFIndia</string>
+    <string name="contribute_repo_name" translatable="false">pitaka-translations</string>
+
+    <!-- F-17: crash-report destination repo. Moved here from buildConfigField
+         so both developer-owned repos (translations + crash log) are configured
+         the same way, in one place. translatable=false: a repo slug is not UI
+         copy. If either is ever blanked, the crash flow falls back to
+         copy-to-clipboard instead of opening a 404 GitHub page. -->
+    <string name="crash_repo_owner" translatable="false">PLFIndia</string>
+    <string name="crash_repo_name" translatable="false">pitak-logs</string>
+
+    <!-- Crash reports (Post-1.0). On-device JVM uncaught exception capture,
+         user-opt-in submission to a public GitHub repo. No developer
+         infrastructure — same prefilled-Issue-URL trick the translations
+         flow uses. -->
+    <string name="crash_banner_title">Pitak crashed last time</string>
+    <string name="crash_banner_body">A crash report is saved on your phone. Send it to help the developer fix this, or dismiss it.</string>
+    <string name="crash_banner_send">Send report</string>
+    <string name="crash_banner_dismiss">Dismiss</string>
+
+    <string name="contribute_translation_section_title">Translations</string>
+    <string name="crash_reports_section_title">Crash reports</string>
+    <string name="crash_reports_section_help">Reports are kept on your phone until you send or delete them. Tap Send to open a prefilled GitHub Issue Form in your browser; the full trace is copied to your clipboard so you can paste it as a comment after submitting.</string>
+    <string name="crash_reports_empty">No crash reports — nothing to send right now.</string>
+    <string name="crash_reports_send">Send</string>
+    <string name="crash_reports_copy">Copy</string>
+    <string name="crash_reports_delete">Delete</string>
+    <string name="crash_reports_delete_all">Delete all crash reports</string>
+    <string name="crash_reports_no_browser">No browser available to open the report.</string>
+    <string name="crash_reports_copied">Crash report copied to clipboard.</string>
+
+    <!-- F-04: pre-submit GitHub disclosure (translation + crash flows). -->
+    <string name="gh_disclosure_title">Opens on GitHub</string>
+    <string name="gh_disclosure_body_translate">Your suggestion opens on GitHub, where it\'s posted publicly — like a public comment. Anyone can see your GitHub username, the original text, and your translation.</string>
+    <string name="gh_disclosure_body_crash">The crash report opens on GitHub, posted publicly like a comment under your GitHub username. It includes your phone model, Android version, and language setting, plus where the app crashed — but nothing you typed into your library.</string>
+    <string name="gh_disclosure_no_account">No GitHub account? You can create one in a moment, or copy this and share it another way.</string>
+    <string name="gh_disclosure_continue">Continue to GitHub</string>
+    <string name="gh_disclosure_copy_instead">Copy instead</string>
+    <string name="gh_disclosure_create_account">Create a GitHub account</string>
+    <string name="gh_disclosure_cancel">Cancel</string>
+    <string name="gh_disclosure_caption">Opens GitHub — posts publicly under your GitHub name.</string>
+
+    <!-- F-04: account-creation tips page (privacy info + username advice). -->
+    <string name="gh_account_tips_title">About your GitHub name</string>
+    <string name="gh_account_tips_body">GitHub is a free, widely used site for sharing and improving software. Creating an account takes a minute. The name you choose becomes your public handle — it shows on anything you post, similar to a username on any social site.</string>
+    <string name="gh_account_tips_username_heading">Already have an account?</string>
+    <string name="gh_account_tips_username_body">Whatever name you\'re signed in with on GitHub is the name that will show publicly. You can change your GitHub username in GitHub\'s settings if you\'d prefer a different one — note that changing it updates your old links and can affect other projects you\'ve contributed to, so it\'s worth choosing one you\'re happy to keep.</string>
+    <string name="gh_account_tips_open_signup">Open GitHub signup</string>
+    <string name="gh_account_tips_back">Back</string>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Phase 2 permissions:
+         INTERNET — ISBN lookup against Open Library / Google Books (§1.1: public
+                    services the user opts into; never developer-controlled).
+         CAMERA   — runtime permission for the barcode scanner (D17 onboarding
+                    "Scan a book" entry point; D7 lookup fallback chain).
+         USE_BIOMETRIC — Phase 4 vault unlock. Install-time permission, no
+                    runtime prompt; the user always sees the system biometric
+                    sheet so the gate is explicit. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <!-- Package visibility (Android 11+, API 30+): without this, resolveActivity
+         and setPackage for web links return null and the contributor flow can no
+         longer pin its GitHub Issue Form URL to a real browser. Declaring the
+         browsable web intent lets us see installed browsers (and Custom Tabs
+         service providers) so the GitHub app cannot intercept the issue URL. -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="https" />
+        </intent>
+        <!-- Custom Tabs provider discovery -->
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".PitakaApplication"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Pitaka"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Pitaka">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- FileProvider for sharing app-generated exports (JSON/CSV/MD/PDF).
+             Exports stream to cacheDir/exports/ and are handed to the share
+             sheet as a content:// URI. grantUriPermissions + per-Intent
+             FLAG_GRANT_READ_URI_PERMISSION keeps access least-privilege. -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- Bundled image-cropper activity (com.vanniktech/canhub). It extends
+             AppCompatActivity and requires an AppCompat-descendant theme; the
+             library declares it with no theme, so it would inherit the app's
+             non-AppCompat Theme.Pitaka and crash. Override just this one
+             activity's theme via manifest merge. -->
+        <activity
+            android:name="com.canhub.cropper.CropImageActivity"
+            android:theme="@style/Theme.Pitaka.Cropper"
+            tools:replace="android:theme" />
+    </application>
+
+</manifest>

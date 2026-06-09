@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Disable Auto Backup and D2D transfer until Phase 6 designs the real backup story.
+     §1.1: no developer-controlled backup, and we must not silently leak vault data
+     to Google Auto Backup before the encrypted-zip path is in place. -->
+<full-backup-content>
+    <exclude domain="database" path="." />
+    <exclude domain="sharedpref" path="." />
+    <exclude domain="file" path="." />
+</full-backup-content>

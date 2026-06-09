@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- FileProvider paths for sharing app-generated exports.
+     Exports are streamed to cacheDir/exports/ then shared via a content:// URI
+     with FLAG_GRANT_READ_URI_PERMISSION (Android "Sharing files" pattern).
+     Only this subtree is exposed — no external storage, least privilege. -->
+<paths>
+    <cache-path name="exports" path="exports/" />
+    <!-- Temp destination for a camera-captured cover photo (TakePicture).
+         The full-size capture lands here, is downscaled into app-private
+         covers/ by ImageStore, then deleted. content:// URI only, least
+         privilege, no external storage. -->
+    <cache-path name="camera" path="camera/" />
+</paths>

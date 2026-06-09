@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. Compose handles real theming; this is the boot/splash
+         theme used until the first Composable applies the MaterialTheme. -->
+    <style name="Theme.Pitaka" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">#E25822</item>
+        <item name="android:windowBackground">@color/pitaka_saffron_50</item>
+    </style>
+
+    <!-- Theme for the bundled image-cropper activity (com.vanniktech/canhub).
+         CropImageActivity extends AppCompatActivity and HARD-REQUIRES an
+         AppCompat-descendant theme — the app's own Theme.Pitaka derives from
+         android:Theme.Material (NOT AppCompat), so without this override the
+         cropper crashes on launch with "You need to use a Theme.AppCompat
+         theme". AppCompat is guaranteed on the classpath because the cropper's
+         CropImageActivity extends AppCompatActivity.
+
+         IMPORTANT: this MUST be an action-bar theme (NOT NoActionBar). The
+         cropper renders its "CROP / done" control as an action-bar MENU item
+         (cropMenuCropButtonTitle/Icon); with a NoActionBar theme there is no
+         action bar to host it and the user has no way to confirm the crop.
+         Saffron action bar + white text/icons to stay on-brand. -->
+    <style name="Theme.Pitaka.Cropper" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#E25822</item>
+        <item name="colorPrimaryDark">#E25822</item>
+        <item name="colorAccent">#E25822</item>
+        <item name="android:statusBarColor">#E25822</item>
+    </style>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Night-mode boot/splash theme: matches the Compose dark scheme so a cold
+         start in dark mode doesn't flash a light saffron background before the
+         first Composable applies MaterialTheme. windowBackground uses the dark
+         neutral that PitakaDarkColorScheme uses for background/surface. -->
+    <style name="Theme.Pitaka" parent="android:Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">#1A1A1A</item>
+        <item name="android:windowBackground">#1A1A1A</item>
+    </style>
+</resources>
