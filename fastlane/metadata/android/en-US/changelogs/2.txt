@@ -1,0 +1,9 @@
+First public release of the Pitak F-Droid edition.
+
+* Local-first personal book library: owned books, wishlist, and encrypted lending records.
+* ISBN and QR scanning via ZXing — no proprietary dependencies.
+* Cover capture with the system camera and an open-source cropper.
+* Encrypted, biometric-gated borrower and loan data.
+* Encrypted backup and restore.
+* Export to JSON/CSV and publish a self-contained web catalogue.
+* No telemetry, no account, no developer server.

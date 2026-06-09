@@ -1,0 +1,26 @@
+Pitak (पिटक) is a single-user, local-first app for managing a personal book library. It tracks the books you own, who has borrowed them, and a wishlist of books you want — all on your device, with no account and no developer server.
+
+The name comes from the Buddhist canon (the Tipiṭaka, the "three baskets"). Pitak is built for home libraries, community lending shelves, and anyone who wants to know where their books are.
+
+PRIVATE BY DESIGN
+
+* Fully offline and local-first. There is no developer backend, no analytics, no telemetry, and the app never "phones home."
+* Your borrower and loan records are encrypted at rest and gated behind your device biometric / PIN.
+* The only network access is for things you explicitly start yourself: looking up a book by ISBN, or publishing your own catalogue to your own GitHub account. Nothing is sent anywhere else.
+* No advertising. No tracking. No required sign-up.
+
+FEATURES
+
+* Library — catalogue the books you own, by ISBN barcode scan or manual entry. Bilingual titles (native script plus optional transliteration).
+* Wishlist — keep a "want to buy" list, scan or type entries, export it.
+* Borrowers and loans — record who has which book, with lent and due dates. This data is encrypted and unlocked with your biometric.
+* Covers — fetch cover art automatically, or set your own with the camera or gallery (images are downscaled on device).
+* Backup and restore — encrypted, portable backups you control, protected by a passphrase you set.
+* Export and publish — export to JSON or CSV, or publish a self-contained web page of your library to your own GitHub Pages, with no third-party dependencies.
+* Community libraries — share and merge book lists with other Pitak users by exchanging a file or scanning a QR code, in person. No server involved.
+
+THIS IS THE F-DROID EDITION
+
+This build contains no proprietary Google libraries. Barcode and QR scanning use ZXing; cover capture uses the system camera and an open-source cropper. There is no ML Kit and no Google Play Services dependency.
+
+Pitak is free software, licensed under the GNU General Public License v3.0 or later.
