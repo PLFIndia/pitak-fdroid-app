@@ -1,0 +1,3 @@
+Cleaner copy throughout: removed internal design-doc references and unused
+placeholder text from the UI. The GitHub sign-in explanation now reads in
+plain English.

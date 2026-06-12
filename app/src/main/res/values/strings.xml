@@ -10,7 +10,6 @@
     <string name="library_empty_card_dismiss">Dismiss</string>
     <string name="library_search_hint">Search title, author, ISBN</string>
     <string name="library_pending_cd">Pending — overdue loans, reminders</string>
-    <string name="library_pending_locked_toast">Vault and Pending are coming in Phase 4.</string>
     <string name="library_scan_cd">Scan a book</string>
     <string name="library_publish_cd">Publish library</string>
     <string name="library_add_cd">Add a book</string>
@@ -61,7 +60,6 @@
     <string name="book_detail_share_template_no_author">%1$s</string>
     <string name="book_detail_share_template_no_author_with_isbn">%1$s (ISBN %2$s)</string>
     <string name="book_detail_share_chooser">Share book</string>
-    <string name="book_detail_lend_unavailable">Lending is coming in Phase 4.</string>
     <string name="book_detail_note_unavailable">Per-book notes editor coming next.</string>
 
     <!-- Scanner -->
@@ -256,7 +254,7 @@
     <string name="publish_contact_phone_hint">e.g. +91 98765 43210</string>
 
     <string name="gh_auth_title">Sign in to GitHub</string>
-    <string name="gh_auth_intro">Pitak uses your own GitHub OAuth App for sign-in (§1.1 — no developer infrastructure). Register one at github.com/settings/applications/new with the Device Flow option checked and paste the Client ID below.</string>
+    <string name="gh_auth_intro">Pitak uses your own GitHub OAuth App for sign-in — nothing runs on a developer server. Register one at github.com/settings/applications/new with the Device Flow option checked and paste the Client ID below.</string>
     <string name="gh_auth_client_id">OAuth App Client ID</string>
     <string name="gh_auth_client_id_error">That doesn\'t look like a Client ID. Paste just the Client ID from your OAuth App\'s settings page — not the full URL.</string>
     <string name="gh_auth_use_oauth">Start sign-in (Device Flow)</string>
@@ -439,10 +437,6 @@
     <string name="nav_loans">Loans</string>
     <string name="nav_settings">Settings</string>
 
-    <!-- Placeholders for not-yet-implemented screens -->
-    <string name="placeholder_wishlist">Wishlist arrives in Phase 3.</string>
-    <string name="placeholder_loans">Loans (vault-gated) arrives in Phase 4.</string>
-    <string name="placeholder_settings">Settings expands across all phases; full screen in Phase 7.</string>
 
     <!-- Errors -->
     <string name="error_generic">Something went wrong.</string>

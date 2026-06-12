@@ -38,8 +38,6 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import dev.khoj.pitaka.R
 import dev.khoj.pitaka.ui.borrowers.BorrowerProfileScreen
-import dev.khoj.pitaka.ui.common.PhasePlaceholderScreen
-import dev.khoj.pitaka.ui.common.SettingsPlaceholderScreen
 import dev.khoj.pitaka.ui.contribute.LocalContributorMode
 import dev.khoj.pitaka.ui.contribute.LocalShowTranslatableHints
 import dev.khoj.pitaka.ui.contribute.LocalizedText
@@ -70,9 +68,8 @@ import dev.khoj.pitaka.ui.wishlist.WishlistScreen
 /**
  * App root composable. Hosts the bottom-nav scaffold and the per-tab NavHost.
  *
- * Phase 1: only the Library tab is functional. The other three tabs route to
- * [PhasePlaceholderScreen] explaining which phase they land in. D26b's
- * Pending button lives in [LibraryScreen]'s top app bar (not a bottom-nav slot).
+ * The Pending button lives in [LibraryScreen]'s top app bar (not a
+ * bottom-nav slot).
  */
 @Composable
 fun PitakaApp() {

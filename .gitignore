@@ -48,3 +48,6 @@ docs/
 
 # Translations repo working copy — canonical copy lives at PLFIndia/pitaka-translations
 pitaka-translations-scaffold/
+
+# Internal journey/status doc — not for the public repo
+pitak-fdroidJourney.md
