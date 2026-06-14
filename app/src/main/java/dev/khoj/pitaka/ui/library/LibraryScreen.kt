@@ -376,17 +376,17 @@ private fun OnboardingCard(
                 }
             }
             Spacer(Modifier.height(12.dp))
-            Row(
-                horizontalArrangement = Arrangement.spacedBy(8.dp),
+            Column(
+                verticalArrangement = Arrangement.spacedBy(8.dp),
                 modifier = Modifier.fillMaxWidth(),
             ) {
-                FilledTonalButton(onClick = onScan, modifier = Modifier.weight(1f)) {
+                FilledTonalButton(onClick = onScan, modifier = Modifier.fillMaxWidth()) {
                     LocalizedText(R.string.library_empty_card_scan, maxLines = 1)
                 }
-                FilledTonalButton(onClick = onType, modifier = Modifier.weight(1f)) {
+                FilledTonalButton(onClick = onType, modifier = Modifier.fillMaxWidth()) {
                     LocalizedText(R.string.library_empty_card_type, maxLines = 1)
                 }
-                FilledTonalButton(onClick = onImport, modifier = Modifier.weight(1f)) {
+                FilledTonalButton(onClick = onImport, modifier = Modifier.fillMaxWidth()) {
                     LocalizedText(R.string.library_empty_card_import, maxLines = 1)
                 }
             }

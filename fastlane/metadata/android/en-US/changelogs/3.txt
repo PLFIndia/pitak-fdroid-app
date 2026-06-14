@@ -1,0 +1,3 @@
+Fixed the three buttons on the empty-library screen ("Scan a book", "Type one
+in", "Import an existing list") being clipped on narrow screens — they now stack
+vertically and show their full labels.
