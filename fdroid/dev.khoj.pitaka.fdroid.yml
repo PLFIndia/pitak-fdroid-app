@@ -11,14 +11,14 @@ RepoType: git
 Repo: https://github.com/PLFIndia/pitak-fdroid-app.git
 
 Builds:
-  - versionName: 1.0.0
-    versionCode: 1
-    commit: 53348f8069299cf4d8e8d2d5ae337284eb767125
+  - versionName: 1.0.2
+    versionCode: 3
+    commit: fd133590affbb04c6f8535a5eb0e39850a7602dc
     subdir: app
     gradle:
       - yes
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 1.0.0
-CurrentVersionCode: 1
+CurrentVersion: 1.0.2
+CurrentVersionCode: 3
