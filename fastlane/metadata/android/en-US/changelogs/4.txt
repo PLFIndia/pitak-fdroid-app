@@ -1,0 +1,3 @@
+Scanning a book's barcode no longer fetches details automatically. The scan
+fills in the ISBN, and you tap "Lookup" when you want to fetch the book's
+details — so the app only connects to the internet when you ask it to.

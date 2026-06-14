@@ -36,8 +36,9 @@ import javax.inject.Inject
  *    "Fill manually" (just close the dialog).
  *  - On NetworkError → emit LookupFailedNetwork event with the same options
  *    plus Retry.
- *  - On scanner hand-off: navigation passes `?isbn=…` → VM auto-triggers a
- *    lookup so the user doesn't tap twice.
+ *  - On scanner hand-off: navigation passes `?isbn=…` → VM pre-fills the
+ *    ISBN field only. No automatic network lookup — the user taps "Lookup"
+ *    when they want metadata, so all network use stays user-initiated.
  *  - D2 duplicate-ISBN dialog wires Save → findByIsbn → existing.
  */
 @HiltViewModel
@@ -67,8 +68,11 @@ class AddBookViewModel @Inject constructor(
         when {
             editingBookId != 0L -> loadForEdit(editingBookId)
             !prefilledIsbn.isNullOrBlank() -> {
+                // Scanner hand-off pre-fills the ISBN but does NOT auto-trigger a
+                // network lookup. The openlibrary.org call only happens when the
+                // user explicitly taps "Lookup", keeping all network use
+                // user-initiated.
                 _form.update { it.copy(isbn = prefilledIsbn) }
-                onLookupIsbn()
             }
         }
     }

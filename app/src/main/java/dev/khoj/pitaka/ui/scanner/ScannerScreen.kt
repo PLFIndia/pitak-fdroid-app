@@ -61,7 +61,8 @@ import java.util.concurrent.Executors
  *                         manually instead" escape hatch (Phase 2 design call).
  *
  * Hands off the accepted ISBN via [onIsbnScanned]; the host route navigates to
- * AddBook with the ISBN pre-filled and Lookup auto-triggered.
+ * AddBook with the ISBN pre-filled. The user taps "Lookup" to fetch metadata —
+ * no automatic network call on scan.
  */
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalPermissionsApi::class)
 @Composable

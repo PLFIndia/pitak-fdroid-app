@@ -44,8 +44,11 @@ class AddWishlistViewModel @Inject constructor(
         when {
             editingId != 0L -> loadForEdit(editingId)
             !prefilledIsbn.isNullOrBlank() -> {
+                // Scanner hand-off pre-fills the ISBN but does NOT auto-trigger a
+                // network lookup. The openlibrary.org call only happens when the
+                // user explicitly taps "Lookup", keeping all network use
+                // user-initiated.
                 _form.update { it.copy(isbn = prefilledIsbn) }
-                onLookupIsbn()
             }
         }
     }
